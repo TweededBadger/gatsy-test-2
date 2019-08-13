@@ -3,14 +3,17 @@ import { Link } from 'gatsby'
 import styles from './navigation.module.css'
 
 export default () => (
-  <nav role="navigation">
-    <ul className={styles.navigation}>
-      <li className={styles.navigationItem}>
-        <Link to="/">Home</Link>
-      </li>
-      <li className={styles.navigationItem}>
-        <Link to="/blog/">Blog</Link>
-      </li>
-    </ul>
+  <nav class="uk-navbar-container" uk-navbar>
+    <div className="uk-navbar-left">
+
+      <ul className="uk-navbar-nav">
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/blog/">Blog</Link>
+        </li>
+      </ul>
+    </div>
   </nav>
 )
